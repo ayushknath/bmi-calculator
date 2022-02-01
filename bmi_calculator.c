@@ -2,16 +2,10 @@
 int main()
 {
   float weight, height, bmi;
-  
-  puts("BMI values (for reference)");
-  puts("Underweight: less than 18.5");
-  puts("Normal: between 18.5 and 24.9");
-  puts("Overweight: between 25 and 29.9");
-  puts("Obese: 30 or greater");
 
-  printf("\nEnter your weight (in kg): ");
+  printf("Enter weight (in kg): ");
   scanf("%f", &weight);
-  printf("Enter your height (in m): ");
+  printf("Enter height (in m): ");
   scanf("%f", &height);
 
   bmi = weight / (height * height);
@@ -29,6 +23,12 @@ int main()
   if(bmi >= 30) {
     puts("(Obese)");
   }
+
+  puts("\nBMI values");
+  puts("Underweight: less than 18.5");
+  puts("Normal: between 18.5 and 24.9");
+  puts("Overweight: between 25 and 29.9");
+  puts("Obese: 30 or greater");
 
   return 0;
 }
